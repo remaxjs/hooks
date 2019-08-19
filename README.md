@@ -27,7 +27,7 @@ export default () => {
   }, []);
 
   return (
-    <View>{!error ? <Text>{res ? res.city : '获取定位中...'}</Text> : '获取地理信息失败'}</View>
+    <View>{!error ? <Text>{res ? res.city : '定位中...'}</Text> : '获取地理信息失败'}</View>
   );
 };
 ```
@@ -44,7 +44,7 @@ export default () => {
   const [res, error] = useLocation({ type: 1 });
 
   return (
-    <View>{!error ? <Text>{res ? res.city : '获取定位中...'}</Text> : '获取地理信息失败'}</View>
+    <View>{!error ? <Text>{res ? res.city : '定位中...'}</Text> : '获取地理信息失败'}</View>
   );
 };
 ```
