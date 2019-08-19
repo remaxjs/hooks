@@ -15,7 +15,7 @@ export default () => {
   const [location, setLocation] = React.useState(null);
   const [error, setError] = React.useState(null);
 
-  React.useEffec(() => {
+  React.useEffect(() => {
     (async () => {
       try {
         const res = await getLocation({ type: 1 });
