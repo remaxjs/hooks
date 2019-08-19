@@ -26,7 +26,9 @@ export default () => {
     })();
   }, []);
 
-  return <View>{!error ? res.city : '获取地理信息失败'}</View>;
+  return (
+    <View>{!error ? <Text>{res ? res.city : '获取定位中...'}</Text> : '获取地理信息失败'}</View>
+  );
 };
 ```
 
@@ -41,6 +43,8 @@ import { useLocation } from 'remax-hooks/alipay';
 export default () => {
   const [res, error] = useLocation({ type: 1 });
 
-  return <View>{!error ? res.city : '获取地理信息失败'}</View>;
+  return (
+    <View>{!error ? <Text>{res ? res.city : '获取定位中...'}</Text> : '获取地理信息失败'}</View>
+  );
 };
 ```
