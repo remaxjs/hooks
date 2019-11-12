@@ -1,9 +1,8 @@
-# remax-hooks
+# remax-hooks（开发中）
 
 小程序 API 的 hooks 封装。
 
 ## 示例
-
 
 ### 不用 hooks
 
